@@ -1,0 +1,29 @@
+{
+  "name": "astro-boilerplate",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "prepare": "panda codegen",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\""
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.4",
+    "@astrojs/react": "^3.0.8",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "astro": "^4.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@pandacss/astro": "^0.22.1",
+    "@pandacss/dev": "^0.22.1",
+    "postcss": "^8.4.32"
+  }
+}
