@@ -29,7 +29,7 @@ export const Footer = () => {
         })}
       >
         <PhoneIcon className={css({ h: "5", w: "5" })} />
-        <p className={css({ fontSize: "sm", lineHeight: "sm" })}>
+        <p className={css({ fontSize: "sm", lineHeight: "sm", ml: "4" })}>
           (123) 456-7890
         </p>
       </div>
@@ -42,7 +42,7 @@ export const Footer = () => {
         })}
       >
         <MailIcon className={css({ h: "5", w: "5" })} />
-        <p className={css({ fontSize: "sm", lineHeight: "sm" })}>
+        <p className={css({ fontSize: "sm", lineHeight: "sm", ml: "4" })}>
           info@psychotherapyclinic.com
         </p>
       </div>
