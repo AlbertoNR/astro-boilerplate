@@ -1,16 +1,40 @@
 ---
-
+import '@/styles/global.css';
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { Hero } from '@/components/Hero'
+import { Services } from '@/components/Services'
+import { Testimonials } from '@/components/Testimonials'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home">
+		<main>	
+			<Hero client:idle/>		
+			<Services client:idle/>
+			<Testimonials client:idle/>
+		</main>
+</BaseLayout>
+
+<style>
+	main { flex: 1; }
+	section {
+  	width: 100%;
+  	padding-top: 3rem;
+  	padding-bottom: 3rem;
+
+	@media screen and (min-width: 48rem) {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+  	}
+	
+
+	@media screen and (min-width: 64rem) {
+    	padding-top: 8rem;
+    	padding-bottom: 8rem;  
+	}
+
+	@media screen and (min-width: 80rem) {
+    	padding-top: 12rem;
+    	padding-bottom: 12rem;
+	}
+ }
+</style>
